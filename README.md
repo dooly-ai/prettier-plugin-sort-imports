@@ -1,3 +1,5 @@
+> Why the Dooly fork? We're looking to support TS `satisfies`. Once the plugin is updated to TS v4.9 we can likely revet back to the original package.
+
 # Prettier plugin sort imports
 
 A prettier plugin to sort import declarations by provided Regular Expression order.
@@ -8,47 +10,46 @@ A prettier plugin to sort import declarations by provided Regular Expression ord
 
 ```javascript
 import React, {
-    FC,
-    useEffect,
-    useRef,
-    ChangeEvent,
-    KeyboardEvent,
-} from 'react';
-import { logger } from '@core/logger';
-import { reduce, debounce } from 'lodash';
-import { Message } from '../Message';
-import { createServer } from '@server/node';
-import { Alert } from '@ui/Alert';
-import { repeat, filter, add } from '../utils';
-import { initializeApp } from '@core/app';
-import { Popup } from '@ui/Popup';
-import { createConnection } from '@server/database';
+  FC,
+  useEffect,
+  useRef,
+  ChangeEvent,
+  KeyboardEvent,
+} from "react";
+import { logger } from "@core/logger";
+import { reduce, debounce } from "lodash";
+import { Message } from "../Message";
+import { createServer } from "@server/node";
+import { Alert } from "@ui/Alert";
+import { repeat, filter, add } from "../utils";
+import { initializeApp } from "@core/app";
+import { Popup } from "@ui/Popup";
+import { createConnection } from "@server/database";
 ```
-
 
 ### Output
 
 ```javascript
-import { debounce, reduce } from 'lodash';
+import { debounce, reduce } from "lodash";
 import React, {
-    ChangeEvent,
-    FC,
-    KeyboardEvent,
-    useEffect,
-    useRef,
-} from 'react';
+  ChangeEvent,
+  FC,
+  KeyboardEvent,
+  useEffect,
+  useRef,
+} from "react";
 
-import { createConnection } from '@server/database';
-import { createServer } from '@server/node';
+import { createConnection } from "@server/database";
+import { createServer } from "@server/node";
 
-import { initializeApp } from '@core/app';
-import { logger } from '@core/logger';
+import { initializeApp } from "@core/app";
+import { logger } from "@core/logger";
 
-import { Alert } from '@ui/Alert';
-import { Popup } from '@ui/Popup';
+import { Alert } from "@ui/Alert";
+import { Popup } from "@ui/Popup";
 
-import { Message } from '../Message';
-import { add, filter, repeat } from '../utils';
+import { Message } from "../Message";
+import { add, filter, repeat } from "../utils";
 ```
 
 ### Install
@@ -213,15 +214,15 @@ Having some trouble or an issue ? You can check [FAQ / Troubleshooting section](
 | React                  | ✅ Everything            | -                                                |
 | Angular                | ✅ Everything            | Supported through `importOrderParserPlugins` API |
 | Vue                    | ✅ Everything            | `@vue/compiler-sfc` is required                  |
-| Svelte                 | ⚠️ Soon to be supported.  | Any contribution is welcome.                     |
+| Svelte                 | ⚠️ Soon to be supported. | Any contribution is welcome.                     |
 
 ### Used by
 
 Want to highlight your project or company ? Adding your project / company name will help plugin to gain attraction and contribution.
 Feel free to make a Pull Request to add your project / company name.
 
--   [trivago](https://company.trivago.com)
--   [AuresKonnect](https://aures.com)
+- [trivago](https://company.trivago.com)
+- [AuresKonnect](https://aures.com)
 
 ### Contribution
 
